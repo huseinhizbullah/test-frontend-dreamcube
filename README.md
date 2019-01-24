@@ -31,3 +31,7 @@ data- attribute digunakan untuk menyimpan data kostum yang nantinya lebih mudah 
 ### CSS reset digunakan untuk menghilangkan semua built-in browser styling
 
 ### Normalizing adalah cara untuk mengkonsistenkan desain cross-browser, umumnya menggunakan normalize.css
+
+## Question 5
+
+### pada saat load ads/google analytics karena konten tsb akan load asynchronously dan mempercepat load browser
