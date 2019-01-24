@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ikut AWR</title>
+</head>
+
+<style>
+    body {
+        font: 400 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .flex-container>div {
+        margin: 10px;
+        text-align: center;
+        line-height: 25x;
+        font-size: 30px;
+        color: #796969c7;
+    }
+    
+    .container:before,
+    .container:after {
+        content: "";
+        display: table;
+    }
+    
+    .container:after {
+        clear: both;
+    }
+    
+    .container {
+        margin-bottom: 24px;
+    }
+    
+    .row-container2:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .row-container:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .container2:before,
+    .container2:after {
+        content: "";
+        display: table;
+    }
+    
+    .container2:after {
+        clear: both;
+    }
+    
+    .container2 {
+        margin-bottom: 24px;
+        background-color: rgb(250, 213, 219);
+    }
+    
+    .container,
+    section,
+    aside {
+        border-radius: 6px;
+    }
+    
+    section,
+    aside {
+        color: #fff;
+        margin: 4.858736059%;
+        text-align: center;
+    }
+    
+    section {
+        float: left;
+        width: 40%;
+        height: 300px;
+    }
+    
+    aside {
+        float: right;
+        width: 40%;
+        height: 300px;
+    }
+    
+    .row-container3 {
+        float: left;
+        width: 30%;
+        height: 300px;
+        margin: 4.858736059%;
+    }
+    
+    .row-container4 {
+        float: right;
+        width: 40%;
+        height: 300px;
+        margin: 4.858736059%;
+    }
+    
+    .row-container {
+        background: rgb(148, 219, 207);
+        width: 50%;
+        height: 300px;
+        float: left;
+    }
+    
+    .row-container2 {
+        background: rgb(250, 213, 219);
+        width: 50%;
+        height: 300px;
+        float: right;
+        color: black;
+    }
+    
+    .row-container2>h1 {
+        text-align: left;
+        padding-left: 15px;
+        font-size: 12px;
+    }
+    
+    .row-container2>p {
+        text-align: left;
+        padding: 15px;
+        font-size: 24px;
+    }
+    
+    .read-more-state {
+        display: none;
+    }
+    
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+    }
+    
+    .read-more-state:checked~.read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+    }
+    
+    .read-more-state~.read-more-trigger:before {
+        content: 'Show more';
+    }
+    
+    .read-more-state:checked~.read-more-trigger:before {
+        content: 'Show less';
+    }
+    
+    .row-container>img {
+        width: 55%;
+        margin-top: 20%;
+    }
+    
+    .row-container3>img {
+        width: 60%;
+        margin-top: 10%;
+        padding-left: 20%;
+    }
+    
+    .read-more-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid #ddd;
+        border-radius: .25em;
+    }
+</style>
+
+<body>
+
+    <div class="flex-container">
+        <div>
+            <p>Cara Ikut AWR 2018</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <div class="row-container">
+                <img src="hand-gesture.png" alt="image" srcset="">
+            </div>
+            <div class="row-container2">
+                <h1>Step 1</h1>
+                <p>Klik tombol DAFTAR pada halaman beranda atau Tentang AWR</p>
+            </div>
+        </section>
+        <aside>
+            <div class="row-container">
+                <img src="signing.png" alt="image" srcset="">
+
+            </div>
+            <div class="row-container2">
+                <h1>Step 2</h1>
+                <p>Isi form data diri Anda secara lengkap dan benar</p>
+            </div>
+
+        </aside>
+    </div>
+
+    <div class="container2">
+        <div class="row-container3">
+            <img src="run.png" alt="image" srcset="">
+
+        </div>
+        <div class="row-container4">
+            <h1>tentang AWR 2018</h1>
+            <h2>Allianz World Run 2018</h2>
+            <p>AWR adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure reiciendis cum culpa blanditiis dignissimos ipsum quos, quaerat commodi deleniti esse, corrupti aperiam veritatis mollitia nihil est tempore repellendus ipsa labore!</p>
+            <input type="checkbox" class="read-more-state" id="post-2" />
+            <ul class="read-more-wrap">
+                <li>lorem</li>
+                <li>lorem 2</li>
+                <li class="read-more-target">lorem 3</li>
+                <li class="read-more-target">lorem 4</li>
+            </ul>
+
+            <label for="post-2" class="read-more-trigger">
+        </div>
+    </div>
+
+</body>
+
+</html>
