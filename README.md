@@ -25,3 +25,9 @@ data- attribute digunakan untuk menyimpan data kostum yang nantinya lebih mudah 
 
 - mirip dengan LocalStorage
 - data hilang ketika user menutup tap / session
+
+## Question 4
+
+### CSS reset digunakan untuk menghilangkan semua built-in browser styling
+
+### Normalizing adalah cara untuk mengkonsistenkan desain cross-browser, umumnya menggunakan normalize.css
